@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script>
+     $(document).ready(function(){
+         
+       $('#new').click(function(){
+        var name=$('#na1').val();
+        if(name.length!=0){
+       $('ol').append("<li>" + name + "</li>");
+   } else{
+
+      alert("blank input not allowed");
+      }
+        
+       });
+       $('#new2').click(function(){
+           var name=$('#gh').val();
+           $('ul').remove(first)  ;
+          });
+          
+
+     });
+
+
+    </script>
+
+
+</head>
+<body>
+
+    <h1>HEAD</h1>
+    <input type="text" placeholder="name" id="na1">
+    <ol id="gh">
+        <li>KUMAR 1</li>
+        <li>ANANTHA 2</li>
+    </ol>
+
+    <button id="new">ADD NAME</button>
+    <button id="new2">NEW BUTTON</button>
+    <button id="re">REMOVE</button>
+
+    
+</body>
+</html>

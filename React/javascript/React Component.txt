@@ -1,0 +1,13 @@
+class Mywebsite extends react.Component
+{
+  render(){
+    return <h1>Welcome to Render Method</h1>
+  }
+}
+class MyNewwebsite extends react.Component{
+  render(){
+    return <div><h1>Multiple render</h1>
+    <Mywebsite/></div>
+  }
+}
+ReactDOM.render(<MyNewwebsite/>,document.getElementById('root'));

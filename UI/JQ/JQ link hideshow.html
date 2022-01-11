@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+          $('#l1,#l2').click(function(){
+              $(this).hide();
+        
+
+          });
+          $('#showlinks').click(function(){
+              $('#l1,#l2').show();
+            });
+      });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <center><h1>TABLE</h1></center>
+    <br>
+    <!-- <button id='h'>Hide</button> -->
+    <!-- <button id='s'>Show</button> -->
+    <button id='showlinks'>Show Links</button>
+
+    <table>
+      <tr>
+        <th>sitename</th>
+      <th>Link</th></tr>
+      <tr>
+          <td>Google</td>
+          <td id="l2"><a href="https://www.Google.com" target="_blank">G link</td>
+      </tr>
+      <tr>
+          <td>yahoo</td>
+          <td id="l1"><a href="https://www.yahoo.com" target="_blank">Y link</td>
+      </tr>
+  
+
+    </table>
+</body>
+</html>

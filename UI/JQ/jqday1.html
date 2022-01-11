@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+</script>
+    <title>Document</title>
+    <script>
+      $(document).ready(function(){
+        $('#we').click(function(){
+           $('p').hide();
+        });
+    $('#we3').click(function(){
+           $('p').show();
+    });
+
+    $('img').click(function(){
+        $(this).hide();
+          });
+    $('#we2').click(function(){
+        
+        $('img').show();
+        alert("Hided Image you can see now ")
+    });
+    
+     
+      $(":button").click(function(){
+            alert("you clicked a button");
+      });
+      $(":submit").click(function(){
+            alert("you clicked a submit button");
+      });
+      $("button").click(function(){
+        $(".c2").css("color","yellow");
+      
+
+      });
+      $("button").click(function(){
+        $("p").css("color" , "red");
+
+});
+    });
+    
+    </script>
+ 
+  
+</head>
+<body>
+    
+
+    <h1>WELLCOME JQUERY</h1>
+
+    <center><p class="c1">HELLO PROGRAM</p></center>
+    <button id="we3" class="btn btn-primary">CLICK HERE TO view HIDED WORD</button>
+    <button id="we" class="btn btn-primary" >HIDE</button>
+    <button id="we2">HIDED PHOTO</button>
+
+    <img src="lee.png" width="200px" height="200px">
+
+    <form>
+        <fieldset>
+            <legend>DATA</legend>
+            <input type="text" id="fname">
+            <input type="password" id="pwd">
+            <input type="reset" value="RESET">
+            <input type="submit" value="submit">
+            <input type="button" class="c2" value="button" >
+        </fieldset>
+    </form>
+</body>
+</html>

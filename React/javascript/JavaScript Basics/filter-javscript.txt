@@ -1,0 +1,13 @@
+//filter true
+const queue_by_age=[24,26,45];
+let isAllowed =queue_by_age.every(function(value, index ,array){
+                                  return value>=19;    
+});
+
+console.log("isAllowed: ",isAllowed)
+
+//filter
+let adults=queue_by_age.filter(function(value){
+  return value>=19;      
+});
+console.log("adults:", adults);

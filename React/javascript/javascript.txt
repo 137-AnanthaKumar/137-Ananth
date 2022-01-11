@@ -1,0 +1,191 @@
+function calculategrade(mark){
+  if(mark>=90 && mark<=100){
+    console.log("you got A grade");}
+   else if(mark>=80 && mark<90){
+     console.log(" you got B grade");}
+   else if (mark>=70 && mark<80 ){
+     console.log("you got C grade")
+   }
+   else {
+     console.log("You are failed")
+   }  
+}
+function percentage(mark){
+  if(mark==68){
+    console.log("That's You you got 68% percentage of mark")
+  }
+  else if(mark!=68);{
+    console.log("You are not")
+  }
+}
+
+calculategrade(45);
+calculategrade(79);
+calculategrade(98);
+percentage(68);
+
+
+--------------------------------------------------------------------------------------
+
+
+ARRAY ODD EVEN
+
+function oddeven(a){
+    even=[];
+    odd=[];
+ for(i=0;i<a.length;i++){
+    
+   if(a[i]%2==0)
+     {
+      
+       even.push(a[i]);
+     
+     }
+   else {
+           odd.push(a[i]);
+   
+           }
+   
+}
+  console.log(even);
+    console.log(odd);
+}
+a = [11,23,12,24,56,3,4,78,55];
+ 
+oddeven(a);
+----------------------------------
+=---------------------------------
+1) Give third array which is addition of even items from both array.
+
+arr1 = [10,20,30,40,50,45,67];
+arr2 = [34,23,56,57,89,22,11];
+
+
+- -- -- -- --
+function oddeven(arr){
+    even=[];
+   
+ for(i=0;i<arr.length;i++){
+    
+   if(arr[i]%2==0)
+     {
+      
+       even.push(arr[i]);
+     
+     }
+   
+}
+  //console.log(even);
+  return even;
+   // console.log(odd);
+}
+function addition(arr1,arr2){
+//   res=0
+//   res=x+y;
+//   for(let i of z){
+//     res += i;
+    
+//   }
+//   return res;
+  addtwo=[...arr3,...arr4];
+   console.log(addtwo);
+  let sum = 0;
+
+for (let i = 0; i < addtwo.length; i++) {
+    sum += addtwo[i];
+}
+ console.log(sum);
+}
+
+//a = [11,23,12,24,56,3,4,78,55];
+arr1 = [10,20,30,40,50,45,67];
+arr2 = [34,23,56,57,89,22,11];
+
+
+arr3=oddeven(arr1);
+console.log(even);
+arr4=oddeven(arr2);
+console.log(even);
+  
+result=addition(arr1,arr2);
+---OOOOOORRRRRRR---
+function oddeven(arr){
+    even=[];
+   
+ for(i=0;i<arr.length;i++){
+    
+   if(arr[i]%2==0)
+     {
+      
+       even.push(arr[i]);
+     
+     }
+   
+}
+  //console.log(even);
+  return even;
+   // console.log(odd);
+}
+function addition(addtwo){
+
+  let sum = 0;
+
+for (let i = 0; i < addtwo.length; i++) {
+    sum += addtwo[i];
+}
+ console.log(sum);
+}
+
+//a = [11,23,12,24,56,3,4,78,55];
+arr1 = [10,20,30,40,50,45,67];
+arr2 = [34,23,56,57,89,22,11];
+
+
+// arr3=oddeven(arr1);
+// console.log(even);
+// arr4=oddeven(arr2);
+// console.log(even);
+ console.log(arr1);
+
+console.log(arr2);
+
+addtwo=[...arr1,...arr2];
+console.log(addtwo);
+
+
+arr3=oddeven(addtwo);
+console.log(even);
+
+arr3=addition(arr3);
+//console.log(addition([...odd1,...odd2]));
+addresult=addition([arr3]);
+console.log(addresult);
+
+
+
+------------------------------------
+
+
+function check(arr){
+  for(i in arr)
+    {
+      
+      
+         if(arr[i][i]!=num){
+        return false;
+      }
+    }
+  return true;
+}
+arr=[[2,0,0],
+     [0,1,1],
+     [0,0,1]
+    ]
+arr2=[[1,0,0],
+     [0,1,0],
+     [0,0,1]
+    ]
+console.log(check(arr));
+console.log(check(arr2));
+
+

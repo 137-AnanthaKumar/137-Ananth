@@ -1,0 +1,119 @@
+class ReactForm extends react.Component{
+  constructor(){
+     super();
+     this.state={
+       username:"",
+       age:null,
+       errormsg:"",
+     };
+  }
+  usernNameCapture=(event)=>{
+    let n=event.target.name;
+    let v=event.target.value;
+    let err="";
+    if(n==="age"){
+      if(v!="" && !Number(v)){
+        err=<strong>Invalid value, Your age must be a number</strong>
+      }
+    }
+    this.setState({errormsg:err});
+   //this.setState({username:event.target.value});
+  this.setState({[n]:v})
+  }
+  formsubmit=(event)=>{
+    event.preventDefault();
+    alert("Your name"+this.state.username+ " Your age is "+this.state.age);
+  }
+
+
+  render(){
+    return(
+      <form onSubmit={this.formsubmit} >
+        <h2> Hello {this.state.username}</h2>
+        <h2>Your Age : {this.state.age}</h2>
+        Enter your Name:<input type="text" name="username" onChange={this.usernNameCapture} />
+        Enter your Age:<input type="text" name="age" onChange={this.usernNameCapture}/>{this.state.errormsg}
+        <input type="submit"/>
+      </form>
+    )
+  }
+}
+ReactDOM.render(  <ReactForm /> ,document.getElementById('root') );
+
+
+
+-------------------------------------------------------------
+class Grade extends react.Component{
+ constructor(){
+   super();
+   this.state={
+     science:0,
+     social:0,
+     maths:0,
+     total:0,
+     grade:'',
+   }
+ }
+ Markcapture=(event)=>{
+    let n=event.target.name;
+    let v=event.target.value;
+    this.setState({[n]:v})
+    // let totalmarks=parseInt(this.state.science)+parseInt(this.state.social)+parseInt(this.state.maths)
+    // this.setState({
+    //  total:totalmarks
+    // });
+
+ }
+ Grade=(event)=>{
+   let totalmarks=parseInt(this.state.science)+parseInt(this.state.social)+parseInt(this.state.maths)
+   this.setState({
+    total:totalmarks
+   });
+   
+    if((((this.state.total/3)*100)>50)&&(((this.state.total/3)*100)<70)){
+    this.setState({
+      grade:'C Grade Pass'
+    })
+  }
+  else if((((this.state.total/3)*100)>70)&&(((this.state.total/3)*100)<=100)){
+    this.setState({
+      grade:'A Grade Pass'
+    })
+  }
+  else{
+    this.setState({
+      grade:'Fail'
+    })
+  }
+   
+  
+   
+
+ }
+
+
+
+  render(){
+    return(
+      <div>
+    
+        Enter Science Mark:<input type="number" name="science" onChange={this.Markcapture} />
+        Enter Social Mark:<input type="number" name="social" onChange={this.Markcapture}/>
+        Enter Maths Mark:<input type="number" name="maths" onChange={this.Markcapture}/>
+        <button onClick={this.Grade}>Calculate Grade</button>
+        
+        <p>Todal mark{this.state.total}</p>
+        <p>result is {this.state.grade}</p>
+       
+       </div>
+       
+     
+    )
+  }
+}
+
+    
+
+
+
+ReactDOM.render(  <Grade /> ,document.getElementById('root') );

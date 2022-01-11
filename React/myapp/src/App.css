@@ -1,0 +1,17 @@
+*{
+  font-style: italic;
+}
+.container{
+  margin-top: 55px;
+  background-color :red;
+  border-radius: 30px;
+  border-color: chartreuse;
+}
+.font {
+  color: aliceblue;
+}
+.text-success{
+  color: whitesmoke;
+}
+
+

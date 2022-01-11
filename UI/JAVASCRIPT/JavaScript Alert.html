@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <h1>WELLCOM  <p id="demo"></p> </h1>
+        <div >
+           
+            <button  onclick="F1()">TRY</button>
+           
+            <p id="demo4"></p>
+            <p id="demo1"></p>
+           
+               </div>
+
+               <button class="btn btn-warning" onclick="F2()">EMERGANCY</button>
+               <h3 id="demo3"></h3>
+        <script >
+             function F1(){
+                 document.getElementById("demo").innerHTML='ANAND';
+                 alert("you clicked try button")
+                             }
+        const fruits = ["Banana", "Orange", "Apple", "M", "Lemon", "mango"]
+        const citrus = fruits.slice(0, 2);
+        let c="WELLCOM PYTHON";
+        let b=c.substr(2,5);
+        
+
+         document.getElementById("demo1").innerHTML = citrus;
+         document.getElementById("demo4").innerHTML=b;
+             function F2(){
+                 document.getElementById("demo3").innerHTML='GETOUT OUT FROM HERE';
+                 alert("you clicked emergency button");
+             }
+          
+        </script>
+            
+
+    </body>
+</html>

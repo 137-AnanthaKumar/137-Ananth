@@ -1,0 +1,186 @@
+
+
+      -----------------------------------LIST PROPE	
+function Menubar(props) {
+  
+
+  const myvlue=props.myvalue
+  const list=myvalue.map((listvalues)=>{
+    return<li>{listvalues}</li>
+  });
+  return <ul>{list}</ul>
+  }
+  const myvalue=[2,4,5,6]
+  ReactDOM.render(<Menubar myvalue={myvalue}/>,document.getElementById('root'));
+----------------------------------
+function Menubar() {
+  
+
+const newlist=[1,2,3,4,5,"hello","welcome"]
+const list=newlist.map((listvalues)=>{
+  return<li>{listvalues}</li>
+});
+return <ul>{list}</ul>
+}
+ReactDOM.render(<Menubar/>,document.getElementById('root'));
+--------------------------------------------------------------------------
+class PropsCon extends react.Component{
+  render(){
+    return <div><h1>HELLO PROPS</h1>
+    <h1>Learn {this.props.topic} in {this.props.language}</h1></div>
+  }
+}
+class PropsCon2 extends react.Component{
+  render(){
+    return <div><h1>HELLO PROPS</h1>
+    <h1>Learn {this.props.topic} in {this.props.language}</h1></div>
+  }
+}
+ReactDOM.render(<PropsCon topic="REACT properties " language="Tamil"/>,document.getElementById('root'));
+---------------------------------------------------------------------------------
+class Currency extends react.Component
+{
+  constructor(props)
+  {
+    super(props);
+    this.state = {
+     value:"",
+      currency: "",
+      result:""
+    };
+    this.rupeeHandler = this.rupeeHandler.bind(this);
+    this.yenHandler = this.yenHandler.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+   
+  }
+  handleChange(event){
+    this.setState({value: event.target.value})
+   
+  }
+  rupeeHandler(event)
+  {
+    this.setState(
+      {currency: " Indian Rupees"}
+    );
+    this.setState(
+      {result: this.state.value*75}
+     );
+    
+
+  }
+  yenHandler(event)
+  {
+    this.setState(
+      {currency: "Yen"}
+    );
+    this.setState(
+      {result: this.state.value*115}
+     );
+    
+    
+  }
+  handleSubmit(event){
+   
+    event.preventDefault();
+   
+  }
+
+  render()
+  {const val=this.state.value;
+    return(    <fieldset> <legend>Currency Conversion</legend>
+      <form onSubmit={this.handleSubmit}>
+        <lable>
+          
+          <input type="number"value={val} onChange={this.handleChange} placeholder= "Enter a number" /> <br></br> <br></br>
+        </lable><button onClick={this.rupeeHandler}>Rupees</button><br></br>
+    <button onClick={this.yenHandler}>Yen</button>
+     </form>
+     <h1></h1></fieldset> 
+    );
+  }
+}
+
+
+ReactDOM.render(
+  <Currency />,
+  document.getElementById("root")
+);
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+import reportWebVitals from './reportWebVitals';
+
+
+//WIthout using JSS 
+const myele =React.createElement('h1',{},"hello")
+--------------------------------------------------------------------------
+
+/----WITH USING JSS
+var mystyle={
+  color:'blue',
+  textAlign:'center'
+
+}
+const myele=<div style={mystyle}><h1>HELLO</h1>
+<h1>Anand age{22}</h1>
+<h1>you can do it</h1></div>
+ReactDOM.render(myele,document.getElementById('root')
+);
+reportWebVitals();---use for center
+-------------------------------------------------------------------------
+
+-----------------using css file---
+const myele=<div ><h1 className='header'>HELLO</h1>
+<h1 >Anand age{22}</h1>
+<h1>you can do it</h1></div>
+ReactDOM.render(myele,document.getElementById('root')
+);
+-------------------FUNCTION-----------------------------------------------
+function Header(){
+  return <div><h1>HEllo Using Function</h1><p>MyLogo</p>
+  </div>
+}
+function Sidebar(){
+  return <h1>Sidebar</h1>
+  
+}
+function Navbar() {
+   return<h2>Navication bar</h2>
+  
+}
+function Mywebsite(){
+  return<div><Header/>
+  <Sidebar/>
+  <Navbar/>
+  <img src='logo192.png'/>
+  <img src='logo512.png'/>
+  </div>
+}
+ReactDOM.render(<Mywebsite/>,document.getElementById('root') );
+----------------------CLASS COMPONENTS-------------------------------------------------
+
+//----------------CLASS COMPONENYT USING  TWO JS FILE....---------------------------------------------
+I..................import Mywebsite from './App.js.;....
+class MyNewwebsite extends react.Component{
+  render(){
+    return <div><h1>Multiple render</h1></div>
+   // <Mywebsite/>
+  }
+}
+ReactDOM.render(<MyNewwebsite/>,document.getElementById('root'));
+
+------------------------------------REACT PROPERTIES------------------------------------------------------------------------------
+class PropsCon extends react.Component{
+  render(){
+    return <div><h1>HELLO PROPS</h1>
+    <h1>Learn {this.props.topic} in {this.props.language}</h1></div>
+  }
+}
+class PropsCon2 extends react.Component{
+  render(){
+    return <div><h1>HELLO PROPS</h1>
+    <h1>Learn {this.props.topic} in {this.props.language}</h1></div>
+  }
+}
+ReactDOM.render(<PropsCon topic="REACT properties " language="Tamil"/>,document.getElementById('root'));
+

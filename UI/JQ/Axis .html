@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="axis.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <title>Axisbanklogin</title>
+    <script>
+      $(document).ready(function(){
+          $('#log').click(function(){
+              $('#re').hide(); 
+            });
+
+              $('#log').click(function(){     
+              $('#ag').hide();
+          });
+          $('#log').click(function(){     
+              $('#lo').show();
+          });
+          
+          $('#reg').click(function(){
+              $('#lo').hide();
+             });
+              $('#reg').click(function(){
+              $('#ag').hide();
+         });
+         $('#reg').click(function(){
+              $('#re').show();
+         });
+         $('#age').click(function(){
+              $('#lo').hide();
+             });
+          $('#age').click(function(){
+              $('#re').hide();
+       });
+       $('#age').click(function(){
+              $('#ag').show();
+         });
+      });
+    </script>
+</head>
+<body>
+    <div class="head">
+        <div class="form-box">
+            <center>AXIS BANK</center>
+          <div class="button-box">
+              
+            <button type="button" id="log" class="toggle-btn">LOGIN ID</button> 
+            <button type="button" id="reg" class="toggle-btn">DEPITCARD</button>
+            <button type="button" id="age" class="toggle-btn">AGENT LOGIN</button>
+        </div>
+            
+        <div>
+            <form class="input-grp" id="lo">
+               <input type="text" class="input-field" placeholder="User Id" required>
+               <input type="password" class="input-field" placeholder="password" required>
+               <input type="checkbox" class="check-box" ><span>Remember password</span>
+               <br>
+               <button type="submit" class="submit-btn">Login</button>
+   
+            </form>
+            <form class="input-grp2" id="re">
+                <input type="number" class="input-field" placeholder="Enter DEPITCARD NO" required>
+                <input type="number" class="input-field" placeholder="Enter Your number" required>
+                
+                <br>
+                <button type="submit" class="submit-btn">LOGIN</button>
+                <br>
+
+                Already have account? <a href="#"> Cleak here to login!</a>
+
+    
+             </form>
+             <form class="input-grp3" id="ag">
+                <input type="text" class="input-field" placeholder="Agent Id" required>
+                <input type="password" class="input-field" placeholder="password" required>
+                <input type="checkbox" class="check-box" ><span>Remember password</span>
+                <br>
+                <button type="submit" class="submit-btn">Login</button>
+    
+             </form>
+   
+         </div>
+
+        </div>
+      
+    </div>
+    
+   
+   
+</body>
+</html>

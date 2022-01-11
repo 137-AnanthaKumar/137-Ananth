@@ -1,0 +1,12 @@
+const people=[
+  {id : 1, firstname: "Anand", lastname:"akila"},
+   {id : 1, firstname: "akila", lastname:"Anand"},
+   {id : 1, firstname: "Anand", lastname:"kumar"}
+];
+let final=people.map(function(val){
+ let fullname=[val.firstname, val.lastname].join(" ");
+  let opj={id : val.id, fullname:fullname};
+  return opj;
+  //return [val.firstname, val.lastname].join(" ");
+});
+console.log(final);

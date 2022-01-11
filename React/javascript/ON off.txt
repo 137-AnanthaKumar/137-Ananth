@@ -1,0 +1,45 @@
+class Room extends react.Component {
+    constructor() {
+      super();
+      this.state = {
+        isLit: true,
+        isOn: true
+      };
+    }
+  
+    flipLight = () => {
+      this.setState({
+        isLit: !this.state.isLit
+      });
+    };
+  
+    turnOn = () => {
+      this.setState({
+        isOn: true,
+      });
+    };
+  
+    turnOff = () => {
+      this.setState({
+        isOn: false,
+      });
+    };
+  
+    render() {
+      const bright = this.state.isLit ? "lit" : "dark";
+  
+      return (
+        <div className={`room ${bright}`}>
+          the room is {this.state.isLit ? "lit" : "dark"} <br />
+          the light is {this.state.isOn ? "on" : "off"} <br />
+          <button onClick={this.flipLight}>Change State</button>
+          <br />
+          <button onClick={this.turnOn}>On</button>
+          <button onClick={this.turnOff}>Off</button>
+        </div>
+      );
+    }
+  }
+  ReactDOM.render(  
+      <Room/> ,
+    document.getElementById('root'));
