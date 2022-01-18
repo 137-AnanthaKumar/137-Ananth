@@ -1,0 +1,11 @@
+body{
+     --twitter-color: rgb(115, 48, 179);
+    --twitter-background-color: rgb(58, 138, 170);
+}
+.app{
+    height: 100vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
