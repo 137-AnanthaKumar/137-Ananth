@@ -1,0 +1,90 @@
+ IMAGE-    <img src="animal.png" height="180" width="300" alt="animal image">   
+            
+            <b> Bold Tag </b>
+ SIZE -     <i> Italic Tag </i>
+            <u> Underline Tag</u>
+
+ NEXTtap-  <a href="second.html">Click for Second Page</a>  
+
+PARAGRAPH  - <p>This is first paragraph.</p>  
+
+ 
+BREAK THE LINE  - <br>
+
+
+
+TABLE BARDOR AND
+INCRASE SIZE OF TABLE           <table border="1px" cellpadding="15px">
+
+                         
+MENTION GROUP OF DETAIL :  <fieldset>....</fieldset>  ///////in registraion page there are differnt section like eduction, school, address.etc.
+
+
+SET MITTLE   -     <center>.....</center>
+
+LONG LINE    - <u>....</u>
+UNDER WORD
+
+
+HORIZONTAL LINE-     </hr>
+ 
+<body style = "background-color:... ; margin-left: 20px; morgin-right:10px; margin-top:  ;
+                background-image:url('--file of image.png');
+                background-repeat:no-repeat;  "  > ....</body>                   
+
+
+NEW DIVITION - <div style="padding : 10px";>........ </div>
+
+
+ <style >div{
+    height: 100px;
+    width : 70px; -----fit-contrnt;
+    background color: ''';                ////USED TO CONTROL WHOLE BODY "div"
+    border : '''':
+    }   </style>    
+similar ----table{
+              }
+
+
+
+
+
+LIST-                       <ol>                                                Output:
+                               <li>Aries</li>                                        1.Aries
+                               <li>Bingo</li>                                        2.Bingo
+                               <li>Leo</li>                                          3.Leo
+                               <li>Oracle</li>                                       4.Oracle
+                            </ol> Output:
+
+
+
+
+
+
+
+ 
+
+
+
+
+TABLE 
+<tr>
+   <td>Sonoo</td>
+   <td>Jaiswal</td>
+   <td>60</td>  
+
+                                              
+</tr>  
+<tr>
+   <td>James</td>
+   <td>William</td>
+   <td>80</td></tr>  
+<tr>
+    <td>Swati</td>
+    <td>Sironi</td>
+    <td>82</td></tr>  
+<tr>
+    <td>Chetna</td>
+    <td>Singh</td>
+    <td>72</td>
+</tr>  
