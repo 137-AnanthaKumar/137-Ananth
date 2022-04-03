@@ -3,7 +3,7 @@ const reducer = (state, action) => {
     return { ...state, item: [] };
   }
 
-  if (action.type === "REMOVE_ITEM") {
+  if (action.type === "REMOVE_ITEMn") {
     return {
       ...state,
       item: state.item.filter((curElem) => {

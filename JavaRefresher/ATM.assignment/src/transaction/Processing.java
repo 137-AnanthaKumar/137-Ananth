@@ -17,7 +17,7 @@ public class Processing {
 	public  void WithdrawProceed(Long acc_no,int withdrewmoney) {
 		//int Availbalance;
 		if(withdrewmoney>0 && withdrewmoney<currentbalance && withdrewmoney%100==0) {
-			Availbalance=currentbalance-withdrewmoney;
+			Availbalance=currentbalance+withdrewmoney;
 			System.out.println("YOUR WITHDRAW IS SUCESSFULL :"+ "Your Available Balance "+Availbalance );
 			
 			

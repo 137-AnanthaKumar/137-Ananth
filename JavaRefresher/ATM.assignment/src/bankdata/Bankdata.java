@@ -16,7 +16,7 @@ public class Bankdata {
 	 
 	public void Withdraw(Long account_no, int withdrawamount ) {
 		final long AccountNum_1=3441000012L;
-		final long AccountNum_2=3441000013L;
+		final long AccountNum_2=3441000014L;
 		ArrayList AccountNumbers=new ArrayList();
 	    AccountNumbers.add(AccountNum_1);
 	    AccountNumbers.add(AccountNum_2);  
